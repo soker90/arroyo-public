@@ -11,6 +11,7 @@ import {
   boxShadow,
   drawerWidth
 } from "assets/jss/material-kit-react.js";
+import {blueColor} from 'assets/jss/material-kit-react';
 
 const headerStyle = {
   appBar: {
@@ -79,6 +80,12 @@ const headerStyle = {
     color: "#FFFFFF",
     boxShadow:
       "0 4px 20px 0px rgba(0, 0, 0, 0.14), 0 7px 12px -5px rgba(0, 188, 212, 0.46)"
+  },
+  blue: {
+    backgroundColor: blueColor,
+    color: "#FFFFFF",
+    boxShadow:
+      "0 4px 2px 0px rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(0, 0, 101, 0.46)"
   },
   success: {
     backgroundColor: successColor,
