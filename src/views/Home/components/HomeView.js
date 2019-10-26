@@ -6,12 +6,11 @@ import Footer from 'components/Footer/Footer.js';
 import GridContainer from 'components/Grid/GridContainer.js';
 import GridItem from 'components/Grid/GridItem.js';
 
-
 import Parallax from 'components/Parallax/Parallax.js';
 import HeaderLinks from 'components/Header/HeaderLinks.js';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
-import AboutUsSection from './AboutUsSection';
+import IntroSection from './IntroSection';
 
 const useStyles = makeStyles(styles);
 const imageHome = require('assets/img/home.jpg');
@@ -49,7 +48,7 @@ const HomeView = memo(props => {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <AboutUsSection/>
+        <IntroSection/>
         { /*<SectionBasics/>
         <SectionNavbars/>
         <SectionTabs/>

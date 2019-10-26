@@ -8,6 +8,7 @@ import {
   grayColor,
   title
 } from "assets/jss/material-kit-react.js";
+import {blueColor} from 'assets/jss/material-kit-react';
 
 const infoStyle = {
   infoArea: {
@@ -40,6 +41,9 @@ const infoStyle = {
   },
   gray: {
     color: grayColor
+  },
+  blue: {
+    color: blueColor,
   },
   icon: {
     width: "36px",
