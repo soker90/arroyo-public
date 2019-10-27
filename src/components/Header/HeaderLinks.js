@@ -28,9 +28,9 @@ const HeaderLinks = memo(() => {
 
     return (
       <List className={classes.list}>
-        {_renderListItem('Inicio', '#Inicio')}
-        {_renderListItem('Descúbrenos', '#Nosotros')}
-        {_renderListItem('Contacto', '#Contacto')}
+        {_renderListItem('Inicio', '/')}
+        {_renderListItem('Descúbrenos', '/descubrenos')}
+        {_renderListItem('Contacto', '/contacto')}
         <ListItem className={classes.listItem}>
           <Tooltip
             id="instagram-twitter"

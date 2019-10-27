@@ -8,6 +8,7 @@ import HeaderLinks from 'components/Header/HeaderLinks.js';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
 import IntroSection from './IntroSection';
+import ArroyoMap from '../../../components/GoogleMaps/GoogleMaps';
 
 const useStyles = makeStyles(styles);
 
@@ -25,9 +26,7 @@ const ContactPage = memo(props => {
         {...rest}
       />
       <Parallax>
-        <div className={classes.container}>
-
-        </div>
+          <ArroyoMap/>
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
