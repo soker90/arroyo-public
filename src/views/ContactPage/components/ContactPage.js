@@ -3,16 +3,14 @@ import classNames from 'classnames';
 import {makeStyles} from '@material-ui/core/styles';
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
-import Parallax from 'components/Parallax/Parallax.js';
 import HeaderLinks from 'components/Header/HeaderLinks.js';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
 import IntroSection from './IntroSection';
-import ArroyoMap from '../../../components/GoogleMaps/GoogleMaps';
+import ArroyoMap from 'components/GoogleMaps/ArroyoMap';
 
 const useStyles = makeStyles(styles);
 
-// eslint-disable-next-line react/display-name
 const ContactPage = memo(props => {
   const classes = useStyles();
   const {...rest} = props;
@@ -25,10 +23,8 @@ const ContactPage = memo(props => {
         color="blue"
         {...rest}
       />
-      <Parallax>
-          <ArroyoMap/>
-      </Parallax>
 
+      <ArroyoMap />
       <div className={classNames(classes.main, classes.mainRaised)}>
         <IntroSection/>
         { /*<SectionBasics/>
@@ -55,5 +51,7 @@ const ContactPage = memo(props => {
     </div>
   );
 });
+
+ContactPage.displayName = 'ContactPage';
 
 export default ContactPage;
