@@ -190,8 +190,8 @@ material-kit-react
         │       └── WorkSection.js
         ├── LoginPage
         │   └── LoginPage.js
-        └── ProfilePage
-            └── ProfilePage.js
+        └── AboutUsPage
+            └── AboutUsPage.js
 ```
 
 

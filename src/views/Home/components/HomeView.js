@@ -15,7 +15,6 @@ import IntroSection from './IntroSection';
 const useStyles = makeStyles(styles);
 const imageHome = require('assets/img/home.jpg');
 
-// eslint-disable-next-line react/display-name
 const HomeView = memo(props => {
   const classes = useStyles();
   const {...rest} = props;
@@ -73,5 +72,7 @@ const HomeView = memo(props => {
     </div>
   );
 });
+
+HomeView.displayName = 'HomeView';
 
 export default HomeView;

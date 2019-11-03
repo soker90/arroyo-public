@@ -57,6 +57,7 @@
     "react-dev-utils": "^9.1.0",
     "react-dom": "^16.10.2",
     "react-google-maps": "^9.4.5",
+    "react-grid-gallery": "^0.5.5",
     "react-router-dom": "^5.1.2",
     "react-slick": "0.25.2",
     "react-swipeable-views": "0.13.3",

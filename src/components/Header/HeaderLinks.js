@@ -19,7 +19,6 @@ const HeaderLinks = memo(() => {
         <Button
           href={link}
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         >
           <CloudDownload className={classes.icons}/> {name}
