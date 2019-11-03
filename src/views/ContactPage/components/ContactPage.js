@@ -5,11 +5,14 @@ import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
 import HeaderLinks from 'components/Header/HeaderLinks.js';
 
-import styles from 'assets/jss/material-kit-react/views/components.js';
-import IntroSection from './IntroSection';
-import ArroyoMap from 'components/GoogleMaps/ArroyoMap';
+import styles from './styles';
+import Parallax from 'components/Parallax/Parallax';
+import GridContainer from '../../../components/Grid/GridContainer';
+import GridItem from '../../../components/Grid/GridItem';
+import FormSection from './FormSection';
 
 const useStyles = makeStyles(styles);
+const imageContact =  require('assets/img/contac.jpg');
 
 const ContactPage = memo(props => {
   const classes = useStyles();
@@ -20,32 +23,28 @@ const ContactPage = memo(props => {
         brand="Cárnicas Arroyo"
         rightLinks={<HeaderLinks/>}
         fixed
-        color="blue"
+        color="transparent"
+        changeColorOnScroll={{
+          height: 200,
+          color: 'blue',
+        }}
         {...rest}
       />
 
-      <ArroyoMap />
+      <Parallax small filter image={imageContact}/>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <IntroSection/>
-        { /*<SectionBasics/>
-        <SectionNavbars/>
-        <SectionTabs/>
-        <SectionPills/>
-        <SectionNotifications/>
-        <SectionTypography/>
-        <SectionJavascript/>
-        <SectionCarousel/>
-        <SectionCompletedExamples/>
-        <SectionLogin/>
-        <GridItem md={12} className={classes.textCenter}>
-          <Link to={'/login-page'} className={classes.link}>
-            <Button color="primary" size="lg" simple>
-              View Login Page
-            </Button>
-          </Link>
-        </GridItem>
-        <SectionExamples/>
-        <SectionDownload/> */}
+        <div className={classes.section}>
+          <div className={classes.container}>
+            <GridContainer justify="center">
+              <GridItem xs={6} sm={12} md={6}>
+                <FormSection />
+              </GridItem>
+              <GridItem xs={6} sm={12} md={6}>
+                <FormSection />
+              </GridItem>
+            </GridContainer>
+          </div>
+        </div>
       </div>
       <Footer/>
     </div>
