@@ -60,6 +60,11 @@ export default function Footer(props) {
         <div className={classes.right}>
           &copy; {1900 + new Date().getYear()} Cárnicas Arroyo C.B.
         </div>
+        <div className={classes.block}>
+          C/Arroyo Mina, 35 Local.
+          Alcázar de San Juan<br/>
+          Tel: <a href='tel:926546979'>926 54 69 79</a>
+        </div>
       </div>
     </footer>
   );

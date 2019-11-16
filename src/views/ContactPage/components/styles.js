@@ -7,8 +7,8 @@ export default {
     textAlign: "left"
   },
   title: {
-    fontSize: "4.2rem",
-    fontWeight: "600",
+    fontSize: "2.8rem",
+    fontWeight: "500",
     display: "inline-block",
     position: "relative"
   },
@@ -32,6 +32,7 @@ export default {
     textDecoration: "none"
   },
   textCenter: {
-    textAlign: "center"
-  }
+    textAlign: "center",
+    marginBottom: '2rem',
+  },
 };
