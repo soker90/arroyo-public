@@ -32,7 +32,9 @@ export default {
     textDecoration: "none"
   },
   textCenter: {
+    paddingTop: '6rem',
     textAlign: "center",
     marginBottom: '2rem',
+    //Media query, mas padding menor que 383px
   },
 };

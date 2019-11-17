@@ -1,4 +1,5 @@
 import React, {memo} from 'react';
+/* eslint-disable */
 import classNames from 'classnames';
 import {makeStyles} from '@material-ui/core/styles';
 import Header from 'components/Header/Header.js';
@@ -13,7 +14,7 @@ import FormSection from './FormSection';
 import ContactDataSection from './ContactDataSection';
 
 const useStyles = makeStyles(styles);
-const imageContact =  require('assets/img/contac.jpg');
+const imageContact = require('assets/img/contac.jpg');
 
 const ContactPage = memo(props => {
   const classes = useStyles();
@@ -36,14 +37,13 @@ const ContactPage = memo(props => {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.section}>
           <div className={classes.container}>
-            <GridContainer justify="center">
-              <GridItem xs={6} sm={12} md={6}>
-                <ContactDataSection />
-              </GridItem>
-              <GridItem xs={6} sm={12} md={6}>
-                <FormSection />
-              </GridItem>
-            </GridContainer>
+
+            <ContactDataSection/>
+
+
+            <FormSection/>
+
+
           </div>
         </div>
       </div>

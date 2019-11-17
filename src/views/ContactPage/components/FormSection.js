@@ -1,65 +1,29 @@
 import React, {memo} from 'react';
-import { makeStyles } from "@material-ui/core/styles";
+import {makeStyles} from '@material-ui/core/styles';
 
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
-import Button from "components/CustomButtons/Button.js";
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
 import styles from './styles';
 
-import CustomInput from 'components/CustomInput/CustomInput';
 
 const useStyles = makeStyles(styles);
 
 const FormSection = memo(() => {
   const classes = useStyles();
+  const generateFoxyForm = (d, t) => {
+    let g = d.createElement(t),
+        s = d.getElementsByTagName(t)[0];
+    g.src = 'http://es.foxyform.com/js.php?id=339340&sec_hash=06278a8fc19&width=100%"';
+    s.parentNode.insertBefore(g, s);
+  };
+
   return (
     <GridContainer justify="center">
       <GridItem cs={12} sm={12} md={8}>
         <h2 className={classes.title}>Contáctanos</h2>
-        <h4 className={classes.description}>
-          Divide details about your product or agency work into parts. Write a
-          few lines about each one and contact us about any further
-          collaboration. We will responde get back to you in a couple of
-          hours.
-        </h4>
-        <form>
-          <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <CustomInput
-                labelText="Your Name"
-                id="name"
-                formControlProps={{
-                  fullWidth: true
-                }}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={12} md={6}>
-              <CustomInput
-                labelText="Your Email"
-                id="email"
-                formControlProps={{
-                  fullWidth: true
-                }}
-              />
-            </GridItem>
-            <CustomInput
-              labelText="Your Message"
-              id="message"
-              formControlProps={{
-                fullWidth: true,
-                className: classes.textArea
-              }}
-              inputProps={{
-                multiline: true,
-                rows: 5
-              }}
-            />
-            <GridContainer justify="center">
-              <GridItem xs={12} sm={12} md={4} className={classes.textCenter}>
-                <Button color="primary">Send Message</Button>
-              </GridItem>
-            </GridContainer>
-          </GridContainer>
+        <form id="form">
+          <a id="foxyform_embed_link_339340" href="http://es.foxyform.com/"/>
+          {generateFoxyForm(document, 'script')}
         </form>
       </GridItem>
     </GridContainer>
