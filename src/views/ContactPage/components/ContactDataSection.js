@@ -21,6 +21,7 @@ const ContactDataSection = memo(() => {
       </GridItem>
       <GridItem xs={12}>
         <h4 className={classes.textCenter}>
+          Productos Cárnicos El Arroyo<br/>
           Cárnicas Arroyo C.B.<br/>
           C/Arroyo Mina, 35 Local<br/>
           Alcázar de San Juan<br/><br />
