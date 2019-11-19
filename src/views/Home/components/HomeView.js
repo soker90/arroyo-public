@@ -1,5 +1,6 @@
 import React, {memo} from 'react';
 import classNames from 'classnames';
+import PropTypes from 'prop-types';
 import {makeStyles} from '@material-ui/core/styles';
 import Header from 'components/Header/Header.js';
 import Footer from 'components/Footer/Footer.js';
@@ -11,6 +12,8 @@ import HeaderLinks from 'components/Header/HeaderLinks.js';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
 import IntroSection from './IntroSection';
+import PreviewGallerySection from './PreviewGallerySection';
+import MapSection from './MapSection';
 
 const useStyles = makeStyles(styles);
 const imageHome = require('assets/img/home.jpg');
@@ -48,6 +51,8 @@ const HomeView = memo(props => {
 
       <div className={classNames(classes.main, classes.mainRaised)}>
         <IntroSection/>
+        <PreviewGallerySection history={props.history}/>
+        <MapSection />
         { /*<SectionBasics/>
         <SectionNavbars/>
         <SectionTabs/>
@@ -72,6 +77,10 @@ const HomeView = memo(props => {
     </div>
   );
 });
+
+HomeView.propTypes = {
+  history: PropTypes.func.isRequired,
+};
 
 HomeView.displayName = 'HomeView';
 

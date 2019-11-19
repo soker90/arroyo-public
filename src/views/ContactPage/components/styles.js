@@ -1,6 +1,6 @@
 import {container} from 'assets/jss/material-kit-react';
 
-export default {
+const styles = theme => ({
   container,
   brand: {
     color: "#FFFFFF",
@@ -35,6 +35,11 @@ export default {
     paddingTop: '6rem',
     textAlign: "center",
     marginBottom: '2rem',
+    [theme.breakpoints.down('sm')]: {
+      paddingTop: '10rem',
+    },
     //Media query, mas padding menor que 383px
   },
-};
+});
+
+export default styles;

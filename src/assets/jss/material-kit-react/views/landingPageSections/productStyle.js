@@ -14,7 +14,14 @@ const productStyle = {
   },
   description: {
     color: "#999"
-  }
+  },
+  subtitle: {
+    ...title,
+    marginBottom: "1rem",
+    marginTop: "0",
+    minHeight: "32px",
+    textDecoration: "none"
+  },
 };
 
 export default productStyle;

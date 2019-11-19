@@ -1,7 +1,7 @@
 import React, {memo} from 'react';
-import { makeStyles } from "@material-ui/core/styles";
-import GridContainer from "components/Grid/GridContainer.js";
-import GridItem from "components/Grid/GridItem.js";
+import {makeStyles} from '@material-ui/core/styles';
+import GridContainer from 'components/Grid/GridContainer.js';
+import GridItem from 'components/Grid/GridItem.js';
 import Gallery from 'react-grid-gallery';
 import styles from './styles';
 import {IMAGES} from './images';
@@ -21,12 +21,12 @@ const GalleryAboutSection = memo(() => {
           </h5>
         </GridItem>
         <GridItem xs={12} sm={12} md={8}>
-          <Gallery images={IMAGES}/>
+          <Gallery images={IMAGES} enableImageSelection={false}/>
         </GridItem>
         <GridItem xs={12} sm={12} md={8} className={classes.video}>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/scULzbb3vZI" frameBorder="0"
                   allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen />
+                  allowFullScreen/>
         </GridItem>
       </GridContainer>
 
