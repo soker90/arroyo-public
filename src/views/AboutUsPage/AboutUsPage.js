@@ -8,7 +8,7 @@ import Parallax from 'components/Parallax/Parallax.js';
 import GalleryAboutSection from './GalleyAboutSection';
 /* eslint-disable */
 
-import styles from 'assets/jss/material-kit-react/views/profilePage.js';
+import styles from 'assets/jss/material-kit-react/views/components.js';
 const imageAbout = require('assets/img/aboutUs.jpg');
 
 const useStyles = makeStyles(styles);

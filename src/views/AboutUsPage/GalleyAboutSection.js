@@ -5,6 +5,7 @@ import GridItem from 'components/Grid/GridItem.js';
 import Gallery from 'react-grid-gallery';
 import styles from './styles';
 import {IMAGES} from './images';
+import VideoYoutube from 'components/VideoYoutube';
 
 const useStyles = makeStyles(styles);
 
@@ -24,9 +25,7 @@ const GalleryAboutSection = memo(() => {
           <Gallery images={IMAGES} enableImageSelection={false}/>
         </GridItem>
         <GridItem xs={12} sm={12} md={8} className={classes.video}>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/scULzbb3vZI" frameBorder="0"
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen/>
+          <VideoYoutube youtubeId='scULzbb3vZI'/>
         </GridItem>
       </GridContainer>
 

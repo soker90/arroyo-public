@@ -35,11 +35,12 @@ const styles = theme => ({
     paddingTop: '6rem',
     textAlign: "center",
     marginBottom: '2rem',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down(381)]: {
       paddingTop: '10rem',
     },
-    //Media query, mas padding menor que 383px
   },
 });
+
+// 'xs' | 'sm' | 'md' | 'lg' | 'xl';
 
 export default styles;
