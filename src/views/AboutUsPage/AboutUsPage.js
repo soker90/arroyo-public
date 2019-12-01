@@ -6,10 +6,9 @@ import Footer from 'components/Footer/Footer.js';
 import HeaderLinks from 'components/Header/HeaderLinks.js';
 import Parallax from 'components/Parallax/Parallax.js';
 import GalleryAboutSection from './GalleyAboutSection';
-/* eslint-disable */
+import imageAbout from 'assets/img/aboutUs.jpg';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
-const imageAbout = require('assets/img/aboutUs.jpg');
 
 const useStyles = makeStyles(styles);
 

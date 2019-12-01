@@ -14,9 +14,9 @@ import styles from 'assets/jss/material-kit-react/views/components.js';
 import IntroSection from './IntroSection';
 import PreviewGallerySection from './PreviewGallerySection';
 import MapSection from './MapSection';
+import imageHome from 'assets/img/home.jpg'
 
 const useStyles = makeStyles(styles);
-const imageHome = require('assets/img/home.jpg');
 
 const HomeView = memo(props => {
   const classes = useStyles();

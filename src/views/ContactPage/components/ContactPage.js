@@ -12,9 +12,9 @@ import GridContainer from '../../../components/Grid/GridContainer';
 import GridItem from '../../../components/Grid/GridItem';
 import FormSection from './FormSection';
 import ContactDataSection from './ContactDataSection';
+import imageContact from 'assets/img/contac.jpg';
 
 const useStyles = makeStyles(styles);
-const imageContact = require('assets/img/contac.jpg');
 
 const ContactPage = memo(props => {
   const classes = useStyles();
