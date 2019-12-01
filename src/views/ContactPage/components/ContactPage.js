@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React, {memo, useEffect} from 'react';
 /* eslint-disable */
 import classNames from 'classnames';
 import {makeStyles} from '@material-ui/core/styles';
@@ -13,12 +13,19 @@ import GridItem from '../../../components/Grid/GridItem';
 import FormSection from './FormSection';
 import ContactDataSection from './ContactDataSection';
 import imageContact from 'assets/img/contac.jpg';
+import {initGA, PageView} from 'utils/analytics';
 
 const useStyles = makeStyles(styles);
 
 const ContactPage = memo(props => {
   const classes = useStyles();
   const {...rest} = props;
+
+  useEffect(() => {
+    initGA();
+    PageView();
+  }, [])
+
   return (
     <div>
       <Header

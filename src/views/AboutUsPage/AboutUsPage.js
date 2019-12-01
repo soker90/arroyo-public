@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React, {memo, useEffect} from 'react';
 import classNames from 'classnames';
 import {makeStyles} from '@material-ui/core/styles';
 import Header from 'components/Header/Header.js';
@@ -9,12 +9,18 @@ import GalleryAboutSection from './GalleyAboutSection';
 import imageAbout from 'assets/img/aboutUs.jpg';
 
 import styles from 'assets/jss/material-kit-react/views/components.js';
+import {initGA, PageView} from 'utils/analytics';
 
 const useStyles = makeStyles(styles);
 
 const AboutUsPage = memo((props) => {
   const classes = useStyles();
   const {...rest} = props;
+
+  useEffect(() => {
+    initGA();
+    PageView();
+  }, [])
 
   return (
     <div>
@@ -31,7 +37,7 @@ const AboutUsPage = memo((props) => {
       />
       <Parallax small filter image={imageAbout}/>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <GalleryAboutSection />
+        <GalleryAboutSection/>
       </div>
       <Footer/>
     </div>

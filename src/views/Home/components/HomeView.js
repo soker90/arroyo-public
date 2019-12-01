@@ -1,4 +1,4 @@
-import React, {memo} from 'react';
+import React, {memo, useEffect} from 'react';
 import classNames from 'classnames';
 import PropTypes from 'prop-types';
 import {makeStyles} from '@material-ui/core/styles';
@@ -15,12 +15,19 @@ import IntroSection from './IntroSection';
 import PreviewGallerySection from './PreviewGallerySection';
 import MapSection from './MapSection';
 import imageHome from 'assets/img/home.jpg'
+import {initGA, PageView} from 'utils/analytics';
 
 const useStyles = makeStyles(styles);
 
 const HomeView = memo(props => {
   const classes = useStyles();
   const {...rest} = props;
+
+  useEffect(() => {
+    initGA();
+    PageView();
+  }, [])
+
   return (
     <div>
       <Header
@@ -41,7 +48,7 @@ const HomeView = memo(props => {
               <div className={classes.brand}>
                 <h1 className={classes.title}>Cárnicas Arroyo</h1>
                 <h3 className={classes.subtitle}>
-                  Tu carnicería de confianza
+                  Tu carnicería en Alcázar de San Juan
                 </h3>
               </div>
             </GridItem>

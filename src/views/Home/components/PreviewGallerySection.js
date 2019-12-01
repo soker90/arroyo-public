@@ -10,11 +10,18 @@ import styles from 'assets/jss/material-kit-react/views/landingPageSections/prod
 import {IMAGES} from './images';
 import Gallery from 'react-grid-gallery';
 import PropTypes from 'prop-types';
+import {Event} from 'utils/analytics';
 
 const useStyles = makeStyles(styles);
 
 const PreviewGallerySection = memo(({history}) => {
   const classes = useStyles();
+
+  const handleClick = () => {
+    Event('CLICK', 'Pulsa en vista precvia de imagenes en Inicio', 'HOME_IMAGES');
+    history.push('/descubrenos');
+  };
+
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
@@ -23,7 +30,7 @@ const PreviewGallerySection = memo(({history}) => {
         </GridItem>
         <GridItem xs={12} sm={12} md={8}>
           <Gallery images={IMAGES} enableImageSelection={false}
-                   onClickThumbnail={() => history.push('/descubrenos')}/>
+                   onClickThumbnail={handleClick}/>
         </GridItem>
       </GridContainer>
     </div>
