@@ -8,8 +8,6 @@ import HeaderLinks from 'components/Header/HeaderLinks.js';
 
 import styles from './styles';
 import Parallax from 'components/Parallax/Parallax';
-import GridContainer from '../../../components/Grid/GridContainer';
-import GridItem from '../../../components/Grid/GridItem';
 import FormSection from './FormSection';
 import ContactDataSection from './ContactDataSection';
 import imageContact from 'assets/img/contac.jpg';
