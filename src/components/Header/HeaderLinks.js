@@ -3,7 +3,7 @@ import {makeStyles} from '@material-ui/core/styles';
 import List from '@material-ui/core/List';
 import ListItem from '@material-ui/core/ListItem';
 import Tooltip from '@material-ui/core/Tooltip';
-import {CloudDownload} from '@material-ui/icons';
+import {PermMedia, Home, Phone} from '@material-ui/icons';
 import Button from 'components/CustomButtons/Button.js';
 
 import styles from 'assets/jss/material-kit-react/components/headerLinksStyle.js';
@@ -14,22 +14,30 @@ const useStyles = makeStyles(styles);
 const HeaderLinks = memo(() => {
     const classes = useStyles();
 
-    const _renderListItem = (name, link) =>
+  /**
+   * Render item header
+   * @param name
+   * @param link
+   * @param Icon
+   * @returns {*}
+   * @private
+   */
+    const _renderListItem = (name, link, Icon) =>
       <ListItem className={classes.listItem}>
         <Button
           href={link}
           color="transparent"
           className={classes.navLink}
         >
-          <CloudDownload className={classes.icons}/> {name}
+          <Icon className={classes.icons}/> {name}
         </Button>
       </ListItem>;
 
     return (
       <List className={classes.list}>
-        {_renderListItem('Inicio', '/')}
-        {_renderListItem('Descúbrenos', '/descubrenos')}
-        {_renderListItem('Contacto', '/contacto')}
+        {_renderListItem('Inicio', '/', Home)}
+        {_renderListItem('Descúbrenos', '/descubrenos', PermMedia)}
+        {_renderListItem('Contacto', '/contacto', Phone)}
         <ListItem className={classes.listItem}>
           <Tooltip
             id="instagram-twitter"

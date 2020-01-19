@@ -34,7 +34,7 @@ export default function IntroSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Embutidos de elaboración propia"
-              description="Chorizos, salchichas, hamburguesas, chistorra, chorizos criollos, chorizos de pollo..."
+              description="Chorizos, salchichas, hamburguesas, chistorra, chorizos de pollo..."
               icon={ButcherIcon}
               iconColor="info"
               vertical
