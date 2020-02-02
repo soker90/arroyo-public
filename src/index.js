@@ -14,9 +14,9 @@ let hist = createBrowserHistory();
 render(
   <Router history={hist}>
     <Switch>
-      <Route path='/contacto' component={ContactPage} />
-      <Route path='/descubrenos' component={AboutUsPage}/>
-      <Route path="/" component={HomePage}/>
+      <Route exact path='/contacto' component={ContactPage} />
+      <Route exact path='/descubrenos' component={AboutUsPage}/>
+      <Route exact path="/" component={HomePage}/>
     </Switch>
   </Router>,
   document.getElementById('root'),
