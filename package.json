@@ -1,7 +1,8 @@
 {
   "name": "arroyo-public",
-  "version": "1.8.0",
-  "description": "Material Kit React. Coded by Creative Tim",
+  "version": "2.0.0",
+  "description": "Web del arroyo",
+  "homepage": "http://www.carnicasarroyo.es/",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
@@ -86,6 +87,7 @@
     "gulp": "4.0.2",
     "gulp-append-prepend": "1.0.8",
     "prettier": "^1.19.1",
+    "react-snap": "^1.23.0",
     "react-snapshot": "^1.3.0"
   },
   "optionalDependencies": {
@@ -93,7 +95,7 @@
   },
   "scripts": {
     "start": "node scripts/start.js",
-    "build": "node scripts/build.js && react-snapshot",
+    "build": "node scripts/build.js && react-snapshot" ,
     "test": "node scripts/test.js --env=jsdom",
     "lint:check": "eslint . --ext=js,jsx;  exit 0",
     "lint:fix": "eslint . --ext=js,jsx --fix;  exit 0",

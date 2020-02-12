@@ -7,8 +7,6 @@ import HeaderLinks from 'components/Header/HeaderLinks.js';
 
 import styles from './styles';
 import Parallax from 'components/Parallax/Parallax';
-// import FormSection from './FormSection';
-import ContactDataSection from './ContactDataSection';
 import imageContact from 'assets/img/contac.jpg';
 import {initGA, PageView} from 'utils/analytics';
 import GridItem from '../../../components/Grid/GridItem';
@@ -16,20 +14,22 @@ import GridContainer from '../../../components/Grid/GridContainer';
 
 const useStyles = makeStyles(styles);
 
-const ContactPage = memo(props => {
+const CookiesPage = memo(props => {
   const classes = useStyles();
   const {...rest} = props;
 
   useEffect(() => {
     initGA();
     PageView();
-  }, [])
 
-  const generateFoxyForm = (d, t) => {
-    let g = d.createElement(t),
-      s = d.getElementsByTagName(t)[0];
-    g.src = 'http://es.foxyform.com/js.php?id=339340&sec_hash=06278a8fc19&width=100%"';
-    s.parentNode.insertBefore(g, s);
+    loadScript('https://consent.cookiebot.com/bb512369-b7b6-4b80-bc25-e3be2dba160e/cd.js')
+  }, []);
+
+  const loadScript = function (src) {
+    let tag = document.createElement('script');
+    tag.async = false;
+    tag.src = src;
+    document.getElementsByClassName('cookieContainer')[0].appendChild(tag);
   };
 
   return (
@@ -50,14 +50,10 @@ const ContactPage = memo(props => {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.section}>
           <div className={classes.container}>
-            <ContactDataSection/>
             <GridContainer justify="center">
               <GridItem cs={12} sm={12} md={8}>
-                <h2 className={classes.title}>Contáctanos</h2>
-                <form id="form">
-                  <a id="foxyform_embed_link_339340" href="http://es.foxyform.com/"/>
-                  {generateFoxyForm(document, 'script')}
-                </form>
+                <h2 className={classes.title}>Política de cookies</h2>
+                <div className='cookieContainer'></div>
               </GridItem>
             </GridContainer>
           </div>
@@ -68,6 +64,6 @@ const ContactPage = memo(props => {
   );
 });
 
-ContactPage.displayName = 'ContactPage';
+CookiesPage.displayName = 'CookiesPage';
 
-export default ContactPage;
+export default CookiesPage;
