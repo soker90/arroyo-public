@@ -52,6 +52,7 @@ export default function Footer(props) {
           </List>
         </div>
         <div className={classes.right}>
+          <a href='/politica-de-cookies'>Política de cookies </a>{' '}
           &copy; {1900 + new Date().getYear()} Cárnicas Arroyo C.B.
         </div>
         {(isWidthUp('sm', props.width)) &&

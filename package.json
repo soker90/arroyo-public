@@ -1,8 +1,8 @@
 {
   "name": "arroyo-public",
-  "version": "1.8.0",
+  "version": "2.0.0",
   "description": "Web del arroyo",
-  "homepage": "http://nueva.carnicasarroyo.es/",
+  "homepage": "http://www.carnicasarroyo.es/",
   "private": true,
   "main": "dist/index.js",
   "dependencies": {
