@@ -1,5 +1,5 @@
 {
-  "name": "@example/basics",
+  "name": "arroyo-public",
   "type": "module",
   "version": "0.0.1",
   "private": true,
@@ -11,6 +11,23 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^2.0.6"
+    "@astrojs/preact": "^2.0.0",
+    "@astrojs/tailwind": "^3.0.1",
+    "@fontsource/montserrat": "4.5.14",
+    "astro": "^2.0.6",
+    "preact": "10.11.3",
+    "tailwindcss": "3.2.4"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "animated-tailwindcss": "4.0.0",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "8.6.0",
+    "eslint-config-standard": "17.0.0",
+    "eslint-plugin-astro": "0.23.0",
+    "eslint-plugin-import": "2.27.5",
+    "eslint-plugin-n": "15.6.1",
+    "eslint-plugin-promise": "6.1.1"
   }
 }
