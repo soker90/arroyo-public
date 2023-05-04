@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<rss version="2.0">
+	<channel>
+		<title>Cárnicas Arroyo</title>
+		<link>http://carnicasarroyo.es/index.html</link>
+		<description>Carnicería tradicional y embutidos de elaboración propia.</description>
+		
+		<item>
+			<title>Nueva Página de Cárnicas Arroyo</title>
+			<link>http://www.carnicasarroyo.es/index.html</link>
+			<description>Carnicería tradicional y embutidos de elaboración propia</description>
+		</item>
+
+		<item>
+			<title>Berenjenas Rellenas</title>
+			<link>http://www.carnicasarroyo.es/recetas/berenjena-rellena.html</link>
+			<description>Lavar las berenjenas y partirlas por la mitad a lo largo, echar un chorrito de aceite de oliva y una pizca de sal sobre cada mitad y meter al horno a 190º unos 25 minutos ya precalentado.</description>
+		</item>
+
+		<item>
+			<title>Arroz al horno</title>
+			<link>http://www.carnicasarroyo.es/recetas/arroz-al-horno.html</link>
+			<description>Freímos en una sartén, con unas cucharadas de aceite, los ajos, las costillas y la panceta, añadiéndoles sal. Retiramos y en el mismo aceite sofreímos los criollos y los ...</description>
+		</item>
+
+		<item>
+			<title>Carrilleras de cerdo en salsa</title>
+			<link>http://www.carnicasarroyo.es/recetas/carrilleras.html</link>
+			<description>Cortamos el puerro, las zanahorias, y el ajo, muy picaditos y rehogamos bien. Le añadimos el laurel, el orégano, la pimienta, el tomate rallado y la sal. Terminamos de ...</description>
+		</item>
+
+		<item>
+			<title>Champiñones Rellenos</title>
+			<link>http://www.carnicasarroyo.es/recetas/champinones.html</link>
+			<description>Lavamos bien los champiñones, les quitamos los tallos, y estos los picamos bien menudos para sofreírlos junto con la cebolla. Cuando le quede poco, le añadimos la carne ...</description>
+		</item>
+
+<item>
+			<title>Codornices Escabechadas</title>
+			<link>http://carnicasarroyo.es/recetas/codornices-escabechadas.html</link>
+			<description>Limpiamos las codornices y las partimos en 4 mitades. Las ponemos en una cacerola y le añadimos la cebolla cortada en juliana, los ajos un poco machacados, las hojas...</description>
+		</item>
+
+	</channel>
+</rss> 
