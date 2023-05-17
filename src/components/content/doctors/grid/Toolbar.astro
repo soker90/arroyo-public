@@ -16,12 +16,12 @@
   </button>
   <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'general' ? 'bg-muted-50 dark:bg-muted-700' : ''"
-    @click="activeCategory = 'general'"
+    :class="activeCategory === 'propio' ? 'bg-muted-50 dark:bg-muted-700' : ''"
+    @click="activeCategory = 'propio'"
   >
     <span
       class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'general' ? 'text-rose-500' : 'text-muted-400 group-hover:text-primary-500'"
+      :class="activeCategory === 'propio' ? 'text-rose-500' : 'text-muted-400 group-hover:text-primary-500'"
     >
       <i class="iconify w-6 h-6" data-icon="ph:person-duotone"></i>
     </span>
@@ -29,12 +29,12 @@
   </button>
   <button
     class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
-    :class="activeCategory === 'cardiology' ? 'bg-muted-50 dark:bg-muted-700' : ''"
-    @click="activeCategory = 'cardiology'"
+    :class="activeCategory === 'panaderia' ? 'bg-muted-50 dark:bg-muted-700' : ''"
+    @click="activeCategory = 'panaderia'"
   >
     <span
       class="flex items-center justify-center h-10 w-10"
-      :class="activeCategory === 'cardiology' ? 'text-rose-500' : ' text-muted-400 group-hover:text-primary-500'"
+      :class="activeCategory === 'panaderia' ? 'text-rose-500' : ' text-muted-400 group-hover:text-primary-500'"
     >
       <i class="iconify w-6 h-6" data-icon="ph:heartbeat-duotone"></i>
     </span>
