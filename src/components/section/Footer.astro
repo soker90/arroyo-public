@@ -1,0 +1,64 @@
+---
+import Container from "@components/section/Container.astro";
+import Logo from "@components/base/Logo.astro";
+---
+
+<footer class="font-sans bg-white dark:bg-muted-900">
+
+  <div class="border-t border-muted-200 dark:border-muted-800">
+    <Container>
+      <div class="px-5 py-8 flex flex-col md:flex-row mx-auto items-center">
+        <div
+          class="w-full ltablet:w-auto lg:w-auto flex flex-col md:flex-row items-center justify-center md:justify-start gap-y-2"
+        >
+            <ul class="list-none mb-10 flex items-center justify-center md:justify-start gap-3">
+              <li>
+                <a
+                  href="#"
+                  class="text-sm text-muted-500 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300"
+                  >Inicio</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#descubrenos"
+                  class="text-sm text-muted-500 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300"
+                  >Descúbrenos</a
+                >
+              </li>
+              <li>
+                <a
+                    href="#productos"
+                    class="text-sm text-muted-500 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300"
+                >Productos</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#contacto"
+                  class="text-sm text-muted-500 dark:text-muted-400 hover:text-primary-500 dark:hover:text-primary-500 transition-colors duration-300"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          
+        </div>
+        <span
+          class="inline-flex ltablet:ml-auto lg:ml-auto md:mt-0 mt-6 w-full justify-center md:justify-start md:w-auto"
+        >
+          <a class="text-muted-500" href="https://www.facebook.com/CarnicasArroyoCB/">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:facebook-f"></i>
+          </a>
+          <a class="ml-3 text-muted-500" href="https://twitter.com/CarnicasArroyo">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:twitter"></i>
+          </a>
+          <a class="ml-3 text-muted-500" href="https://www.instagram.com/carnicasarroyo/">
+            <i class="iconify w-5 h-5" data-icon="fa6-brands:instagram"></i>
+          </a>
+        </span>
+      </div>
+    </Container>
+  </div>
+
+  
+</footer>

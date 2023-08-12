@@ -1,0 +1,43 @@
+<div
+  class="sticky top-24 md:top-20 w-full flex bg-white dark:bg-muted-800 border border-muted-200 dark:border-muted-700 rounded divide-x divide-muted-200 dark:divide-muted-700 shadow-xl shadow-muted-300/30 dark:shadow-muted-900/30 overflow-x-auto z-30"
+>
+  <button
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
+    :class="activeCategory === 'all' ? 'bg-muted-50 dark:bg-muted-700' : ''"
+    @click="activeCategory = 'all'"
+  >
+    <span
+      class="flex items-center justify-center h-10 w-10"
+      :class="activeCategory === 'all' ? 'text-rose-500' : 'text-muted-400 group-hover:text-primary-500'"
+    >
+      <i class="iconify w-6 h-6" data-icon="ph:first-aid-duotone"></i>
+    </span>
+    <span>Todos</span>
+  </button>
+  <button
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
+    :class="activeCategory === 'propio' ? 'bg-muted-50 dark:bg-muted-700' : ''"
+    @click="activeCategory = 'propio'"
+  >
+    <span
+      class="flex items-center justify-center h-10 w-10"
+      :class="activeCategory === 'propio' ? 'text-rose-500' : 'text-muted-400 group-hover:text-primary-500'"
+    >
+      <i class="iconify w-6 h-6" data-icon="ph:person-duotone"></i>
+    </span>
+    <span>Elaboración propia</span>
+  </button>
+  <button
+    class="group flex-1 flex items-center px-5 py-3 whitespace-nowrap font-sans text-muted-800 dark:text-muted-100 hover:bg-muted-50 dark:hover:bg-muted-700 transition-colors duration-300"
+    :class="activeCategory === 'panaderia' ? 'bg-muted-50 dark:bg-muted-700' : ''"
+    @click="activeCategory = 'panaderia'"
+  >
+    <span
+      class="flex items-center justify-center h-10 w-10"
+      :class="activeCategory === 'panaderia' ? 'text-rose-500' : ' text-muted-400 group-hover:text-primary-500'"
+    >
+      <i class="iconify w-6 h-6" data-icon="ph:heartbeat-duotone"></i>
+    </span>
+    <span>Panadería</span>
+  </button>
+</div>
