@@ -45,6 +45,7 @@ const ContactPage = memo(props => {
           </div>
         </div>
       </div>
+        
       <Footer/>
     </div>
   );
